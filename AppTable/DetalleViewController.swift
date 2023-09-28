@@ -18,10 +18,15 @@ class DetalleViewController: UIViewController {
     @IBOutlet weak var lblEdad: UILabel!
     @IBOutlet weak var lblSueldo: UILabel!
     
+    // declarar  variable de la estructura Cliente
+    var bean:Cliente!  // ! significa que sera inicializado despues
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        lblCodigo.text="Codigo : "+String(bean.codigo)
+        //
     }
     
 

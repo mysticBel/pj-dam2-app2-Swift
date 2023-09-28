@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     //arreglo de estructura
     var listaClientes:[Cliente]=[]
+    //
+    var posCliente = -1 //para el tableView
     
     @IBOutlet weak var tvClientes: UITableView!
     
@@ -60,9 +62,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // metodo de UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        posCliente=indexPath.row
         //llamar al segue "detalle"
         performSegue(withIdentifier: "detalle", sender: self)
     }
     
+    //metodo para enviar datos a la otra pantalla (prepare)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Creamos objeto de la clase DetalleViewController
+        let destino=segue.destination as! DetalleViewController
+        destino.bean=listaClientes[posCliente]
+    }
 }
 
