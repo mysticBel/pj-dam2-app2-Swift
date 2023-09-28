@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
 
     //arreglo de estructura
@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         //indicamos que la tabla trabaja con origen de datos (self es como this)
         tvClientes.dataSource = self
+        tvClientes.delegate = self
         //llamamos el metodo
         llenarClientes()
         tvClientes.rowHeight = 150
@@ -39,7 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         
     }
     
-    // meotdos del delegate UITableViewDataSource
+    // metodos del delegate UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listaClientes.count
     }
@@ -55,6 +56,12 @@ class ViewController: UIViewController, UITableViewDataSource {
         vista.imgFoto.image = UIImage(named: listaClientes[indexPath.row].foto)
         
         return vista
+    }
+    
+    // metodo de UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //llamar al segue "detalle"
+        performSegue(withIdentifier: "detalle", sender: self)
     }
     
 }
