@@ -24,8 +24,13 @@ class DetalleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         lblCodigo.text="Codigo : "+String(bean.codigo)
+        /*lblCodigo.text="Codigo : "+String(bean.nombre)
+        lblCodigo.text="Codigo : "+String(bean.apellido)
+        lblCodigo.text="Codigo : "+String(bean.edad)
+        lblCodigo.text="Codigo : "+String(bean.sueldo)
+        imgFoto.image = UIImage(named: bean.foto)*/
+
         //
     }
     
