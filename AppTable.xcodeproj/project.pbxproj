@@ -16,6 +16,7 @@
 		9670A0322AC5003D0003A4C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9670A0302AC5003D0003A4C5 /* LaunchScreen.storyboard */; };
 		9670A03A2AC502FD0003A4C5 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9670A0392AC502FD0003A4C5 /* Cliente.swift */; };
 		9670A03C2AC5048A0003A4C5 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9670A03B2AC5048A0003A4C5 /* ItemTableViewCell.swift */; };
+		96D42EB12ACEDB2500F7CEC9 /* NuevoClienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D42EB02ACEDB2500F7CEC9 /* NuevoClienteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9670A0332AC5003D0003A4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9670A0392AC502FD0003A4C5 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 		9670A03B2AC5048A0003A4C5 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		96D42EB02ACEDB2500F7CEC9 /* NuevoClienteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoClienteViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				9670A0392AC502FD0003A4C5 /* Cliente.swift */,
 				9670A03B2AC5048A0003A4C5 /* ItemTableViewCell.swift */,
 				961DE1FD2AC5A28F00F01213 /* DetalleViewController.swift */,
+				96D42EB02ACEDB2500F7CEC9 /* NuevoClienteViewController.swift */,
 			);
 			path = AppTable;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				9670A02A2AC500370003A4C5 /* ViewController.swift in Sources */,
 				9670A03C2AC5048A0003A4C5 /* ItemTableViewCell.swift in Sources */,
 				9670A0262AC500370003A4C5 /* AppDelegate.swift in Sources */,
+				96D42EB12ACEDB2500F7CEC9 /* NuevoClienteViewController.swift in Sources */,
 				9670A0282AC500370003A4C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

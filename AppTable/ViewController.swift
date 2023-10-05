@@ -30,7 +30,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 
     @IBAction func btnNuevoCliente(_ sender: UIButton) {
-        
+        //sesion6
+        // Llamar al segue "nuevoCliente"
+        performSegue(withIdentifier: "nuevoCliente", sender: self)
         
         
     }
