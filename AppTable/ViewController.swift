@@ -71,9 +71,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     //metodo para enviar datos a la otra pantalla (prepare)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Creamos objeto de la clase DetalleViewController
-        let destino=segue.destination as! DetalleViewController
-        destino.bean=listaClientes[posCliente]
+        //sesion6 - cambios en el segue (VALIDAR segue)
+        if segue.identifier=="detalle" {
+            // Creamos objeto de la clase DetalleViewController
+            let destino=segue.destination as! DetalleViewController
+            destino.bean=listaClientes[posCliente]
+        }
+       
     }
 }
 
