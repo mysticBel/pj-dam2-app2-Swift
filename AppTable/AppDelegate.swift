@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy var persistentContainer: NSPersistentContainer = {
 
-        let container = NSPersistentContainer(name: "pruebaCoreData")
+        let container = NSPersistentContainer(name: "ConsorcioModel")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
  

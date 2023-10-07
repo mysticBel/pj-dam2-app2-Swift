@@ -16,6 +16,8 @@
 		9670A0322AC5003D0003A4C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9670A0302AC5003D0003A4C5 /* LaunchScreen.storyboard */; };
 		9670A03A2AC502FD0003A4C5 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9670A0392AC502FD0003A4C5 /* Cliente.swift */; };
 		9670A03C2AC5048A0003A4C5 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9670A03B2AC5048A0003A4C5 /* ItemTableViewCell.swift */; };
+		96BBBD642AD168B2003D561F /* ConsorcioModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96BBBD622AD168B2003D561F /* ConsorcioModel.xcdatamodeld */; };
+		96BBBD682AD18BE7003D561F /* ClienteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BBBD672AD18BE7003D561F /* ClienteController.swift */; };
 		96D42EB12ACEDB2500F7CEC9 /* NuevoClienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D42EB02ACEDB2500F7CEC9 /* NuevoClienteViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		9670A0332AC5003D0003A4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9670A0392AC502FD0003A4C5 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 		9670A03B2AC5048A0003A4C5 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		96BBBD632AD168B2003D561F /* ConsorcioModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConsorcioModel.xcdatamodel; sourceTree = "<group>"; };
+		96BBBD672AD18BE7003D561F /* ClienteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteController.swift; sourceTree = "<group>"; };
 		96D42EB02ACEDB2500F7CEC9 /* NuevoClienteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoClienteViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,8 @@
 				9670A03B2AC5048A0003A4C5 /* ItemTableViewCell.swift */,
 				961DE1FD2AC5A28F00F01213 /* DetalleViewController.swift */,
 				96D42EB02ACEDB2500F7CEC9 /* NuevoClienteViewController.swift */,
+				96BBBD622AD168B2003D561F /* ConsorcioModel.xcdatamodeld */,
+				96BBBD672AD18BE7003D561F /* ClienteController.swift */,
 			);
 			path = AppTable;
 			sourceTree = "<group>";
@@ -152,7 +158,9 @@
 			files = (
 				961DE1FE2AC5A28F00F01213 /* DetalleViewController.swift in Sources */,
 				9670A03A2AC502FD0003A4C5 /* Cliente.swift in Sources */,
+				96BBBD682AD18BE7003D561F /* ClienteController.swift in Sources */,
 				9670A02A2AC500370003A4C5 /* ViewController.swift in Sources */,
+				96BBBD642AD168B2003D561F /* ConsorcioModel.xcdatamodeld in Sources */,
 				9670A03C2AC5048A0003A4C5 /* ItemTableViewCell.swift in Sources */,
 				9670A0262AC500370003A4C5 /* AppDelegate.swift in Sources */,
 				96D42EB12ACEDB2500F7CEC9 /* NuevoClienteViewController.swift in Sources */,
@@ -372,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		96BBBD622AD168B2003D561F /* ConsorcioModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				96BBBD632AD168B2003D561F /* ConsorcioModel.xcdatamodel */,
+			);
+			currentVersion = 96BBBD632AD168B2003D561F /* ConsorcioModel.xcdatamodel */;
+			path = ConsorcioModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9670A01A2AC500370003A4C5 /* Project object */;
 }
