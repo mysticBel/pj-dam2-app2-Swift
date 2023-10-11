@@ -36,7 +36,24 @@ class ClienteController: NSObject {
     }
     
     //LISTAR CLIENTES
-    func listCliente(){
-    
+    func listCliente()->[ClienteEntity]{
+        // 1. Crear objeto de clase AppDelegate
+        let delegate=UIApplication.shared.delegate as! AppDelegate //accedemos al archivo appdelegate , lo casteamos
+        // 2. Accedemos a  la bd
+        let contextoBD=delegate.persistentContainer.viewContext  //viewcontext da el acceso
+        // 3.  declara un arreglo de la entidad ClienteEntity
+        // []! -ª arreglo que esta declarado pero no va estar inicializado, sino cuando se ejecute un preceso
+        var resultado:[ClienteEntity]!
+        do{
+            // 4. obtener lista de la entidad ClienteEntity en tipo NSFetchRequest
+            let datos=ClienteEntity.fetchRequest()  //es como un select y le pasa a datos
+            //datos es un objeto NSFetchREquest por eso
+            // 5. Convertimos datos en un arreglo de ClienteEntity
+            resultado=try contextoBD.fetch(datos)
+        }
+        catch let error as NSError{
+            print(error.localizedDescription)
+        }
+        return resultado
     }
 }
