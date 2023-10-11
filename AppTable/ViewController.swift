@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 
     //arreglo de estructura
-    var listaClientes:[Cliente]=[]
+    var listaClientes:[ClienteEntity]=[]
     //
     var posCliente = -1 //para el tableView
     
@@ -20,11 +20,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // llenamos arreglo : core data
+        listaClientes=ClienteController().listCliente()
+        
         //indicamos que la tabla trabaja con origen de datos (self es como this)
         tvClientes.dataSource = self
         tvClientes.delegate = self
         //llamamos el metodo
-        llenarClientes()
+        //llenarClientes()
         tvClientes.rowHeight = 150
     }
 
@@ -37,12 +40,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
-    //metodo
-    func llenarClientes(){
+    //metodo -- lo estamos comentando porque ahora usamos core data
+    /*func llenarClientes(){
         listaClientes.append(Cliente(codigo: 1, nombre: "Luis", apellido: "Soto", edad: 20, sueldo: 2500, foto: "persona1"))
         listaClientes.append(Cliente(codigo: 2, nombre: "Pedro", apellido: "Soto", edad: 23, sueldo: 3000, foto: "persona2"))
         
-    }
+    } */
     
     // metodos del delegate UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,8 +59,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //acceder a los atributos
         vista.lblCodigo.text =  String(listaClientes[indexPath.row].codigo)
-        vista.lblNombres.text =  String(listaClientes[indexPath.row].nombre)
-        vista.imgFoto.image = UIImage(named: listaClientes[indexPath.row].foto)
+        vista.lblNombres.text =  listaClientes[indexPath.row].nombre
+        //vista.imgFoto.image = UIImage(named: listaClientes[indexPath.row].foto)
         
         return vista
     }

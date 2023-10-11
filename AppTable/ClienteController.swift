@@ -56,4 +56,34 @@ class ClienteController: NSObject {
         }
         return resultado
     }
+    
+    // s7: ACTUALIZAR CLIENTE
+    func updateCliente(bean : ClienteEntity){
+        let delegate = UIApplication.shared.delegate as! AppDelegate;
+        let contextoBD = delegate.persistentContainer.viewContext;
+        // Actualizar
+        do{
+            //grabar actualizar
+            try contextoBD.save();
+        } catch(let error as NSError){
+            print(error.localizedDescription);
+        }
+    }
+    
+    // s7: ELIMINAR CLIENTE
+    func deleteCliente(bean: ClienteEntity){
+        let delegate = UIApplication.shared.delegate as! AppDelegate;
+        let contextoBD = delegate.persistentContainer.viewContext;
+        // Eliminar
+        do{
+            contextoBD.delete(bean);
+            //grabar eliminar
+            try contextoBD.save();
+        } catch(let error as NSError){
+            print(error.localizedDescription);
+        }
+    }
+    
+    
+    //s7: ELIMINAR CLIENTE
 }
