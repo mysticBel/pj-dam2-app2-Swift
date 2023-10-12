@@ -84,6 +84,4 @@ class ClienteController: NSObject {
         }
     }
     
-    
-    //s7: ELIMINAR CLIENTE
 }
