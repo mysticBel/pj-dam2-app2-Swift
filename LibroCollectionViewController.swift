@@ -1,8 +1,8 @@
 //
 //  LibroCollectionViewController.swift
+
 //  AppTable
-//
-//  Created by Maribel on 11/10/23.
+////  Created by Maribel on 11/10/23.
 //
 
 import UIKit
@@ -34,7 +34,7 @@ class LibroCollectionViewController: UIViewController, UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         // Crear objeto de la clase ItemCollectionViewCell
-        let celda=cvLibros.dequeueReusableCell(withReuseIdentifier: "LibtoItem", for: indexPath) as! LibroItemCollectionViewCell
+        let celda=cvLibros.dequeueReusableCell(withReuseIdentifier: "LibroItem", for: indexPath) as! LibroItemCollectionViewCell
         celda.imgFoto.image=UIImage(named: libroList[indexPath.row].foto)
         celda.lblTitulo.text=libroList[indexPath.row].titulo
         //
@@ -54,7 +54,7 @@ class LibroCollectionViewController: UIViewController, UICollectionViewDataSourc
     
     // metodo sizeforItemAt del protocolo UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 110, height: 150);
+        return CGSize(width: 150, height: 200);
     }
   
 }
