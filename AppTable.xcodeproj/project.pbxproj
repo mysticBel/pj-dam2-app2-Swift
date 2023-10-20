@@ -16,6 +16,9 @@
 		9670A0322AC5003D0003A4C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9670A0302AC5003D0003A4C5 /* LaunchScreen.storyboard */; };
 		9670A03A2AC502FD0003A4C5 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9670A0392AC502FD0003A4C5 /* Cliente.swift */; };
 		9670A03C2AC5048A0003A4C5 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9670A03B2AC5048A0003A4C5 /* ItemTableViewCell.swift */; };
+		96AE8A2F2AE2E1A200D45807 /* AlumnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE8A2E2AE2E1A200D45807 /* AlumnoViewController.swift */; };
+		96AE8A312AE2E31C00D45807 /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE8A302AE2E31C00D45807 /* Alumno.swift */; };
+		96AE8A332AE31C8400D45807 /* Paciente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE8A322AE31C8400D45807 /* Paciente.swift */; };
 		96BBBD642AD168B2003D561F /* ConsorcioModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96BBBD622AD168B2003D561F /* ConsorcioModel.xcdatamodeld */; };
 		96BBBD682AD18BE7003D561F /* ClienteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BBBD672AD18BE7003D561F /* ClienteController.swift */; };
 		96C155FC2AD755FE001ED8FB /* LibroCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C155FB2AD755FE001ED8FB /* LibroCollectionViewController.swift */; };
@@ -36,6 +39,9 @@
 		9670A0332AC5003D0003A4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9670A0392AC502FD0003A4C5 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
 		9670A03B2AC5048A0003A4C5 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		96AE8A2E2AE2E1A200D45807 /* AlumnoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoViewController.swift; sourceTree = "<group>"; };
+		96AE8A302AE2E31C00D45807 /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
+		96AE8A322AE31C8400D45807 /* Paciente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paciente.swift; sourceTree = "<group>"; };
 		96BBBD632AD168B2003D561F /* ConsorcioModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConsorcioModel.xcdatamodel; sourceTree = "<group>"; };
 		96BBBD672AD18BE7003D561F /* ClienteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteController.swift; sourceTree = "<group>"; };
 		96C155FB2AD755FE001ED8FB /* LibroCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -74,6 +80,7 @@
 		9670A0242AC500370003A4C5 /* AppTable */ = {
 			isa = PBXGroup;
 			children = (
+				96AE8A2D2AE2E15200D45807 /* alumno */,
 				9670A0252AC500370003A4C5 /* AppDelegate.swift */,
 				9670A0272AC500370003A4C5 /* SceneDelegate.swift */,
 				9670A0292AC500370003A4C5 /* ViewController.swift */,
@@ -92,6 +99,16 @@
 				96C155FF2AD75EB1001ED8FB /* Libro.swift */,
 			);
 			path = AppTable;
+			sourceTree = "<group>";
+		};
+		96AE8A2D2AE2E15200D45807 /* alumno */ = {
+			isa = PBXGroup;
+			children = (
+				96AE8A2E2AE2E1A200D45807 /* AlumnoViewController.swift */,
+				96AE8A302AE2E31C00D45807 /* Alumno.swift */,
+				96AE8A322AE31C8400D45807 /* Paciente.swift */,
+			);
+			path = alumno;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96AE8A332AE31C8400D45807 /* Paciente.swift in Sources */,
 				96C155FE2AD7589B001ED8FB /* LibroItemCollectionViewCell.swift in Sources */,
 				961DE1FE2AC5A28F00F01213 /* DetalleViewController.swift in Sources */,
 				9670A03A2AC502FD0003A4C5 /* Cliente.swift in Sources */,
 				96BBBD682AD18BE7003D561F /* ClienteController.swift in Sources */,
 				9670A02A2AC500370003A4C5 /* ViewController.swift in Sources */,
 				96BBBD642AD168B2003D561F /* ConsorcioModel.xcdatamodeld in Sources */,
+				96AE8A2F2AE2E1A200D45807 /* AlumnoViewController.swift in Sources */,
+				96AE8A312AE2E31C00D45807 /* Alumno.swift in Sources */,
 				96C156002AD75EB1001ED8FB /* Libro.swift in Sources */,
 				96C155FC2AD755FE001ED8FB /* LibroCollectionViewController.swift in Sources */,
 				9670A03C2AC5048A0003A4C5 /* ItemTableViewCell.swift in Sources */,
