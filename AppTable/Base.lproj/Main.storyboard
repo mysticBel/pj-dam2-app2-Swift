@@ -390,10 +390,10 @@
             </objects>
             <point key="canvasLocation" x="3252.6717557251909" y="81.690140845070431"/>
         </scene>
-        <!--Alumno View Controller-->
+        <!--Paciente View Controller-->
         <scene sceneID="FRX-z0-UsR">
             <objects>
-                <viewController id="sev-IK-n0v" customClass="AlumnoViewController" customModule="AppTable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sev-IK-n0v" customClass="PacienteViewController" customModule="AppTable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fga-Mr-gcN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

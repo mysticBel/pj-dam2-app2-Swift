@@ -1,5 +1,5 @@
 //
-//  AlumnoViewController.swift
+//  PacienteViewController.swift
 //  AppTable
 //
 //  Created by Maribel on 20/10/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AlumnoViewController: UIViewController {
+class PacienteViewController: UIViewController {
 
     // para la tabla en la vista
     var listaPacientes:[Paciente] = []
@@ -15,9 +15,10 @@ class AlumnoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cargarPacientes()
-        
+        // Do any additional setup after loading the view.
     }
     
+
     // Despues de crear la struct , creamos la funcion api que llama los alumnos
     func cargarPacientes(){
         let URLAPI="https://alura-es-cursos.github.io/api-pacientes/pacientes.json"
@@ -44,5 +45,6 @@ class AlumnoViewController: UIViewController {
         tarea.resume()
     }
  
+
 
 }
